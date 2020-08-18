@@ -444,20 +444,104 @@ MindMap - интеллектуальная карта, инструмент ви
 2. [Презентация Tool Comparison: Enterprise BI vs Self-Service Analytics: Choosing the Best Tool for the Job](https://www.slideshare.net/senturus/tool-comparison-enterprise-bi-vs-selfservice-analytics-choosing-the-best-tool-for-the-job) (English)
 3. [Семь раз отмерь, один раз внедри BI инструмент](https://habr.com/ru/company/ods/blog/460807/) (Русский)
 
-## 3.5 Molap vs Rolap
+## 3.5 Ох уж эти кубы (Molap vs Rolap)
 
-## 3.6 Анатомия BI продукта
+Когда мы работаем с аналитикой мы часто слышим про кубы. Если честно, кубами и OLAP называют все в подряд без разбора, включая BI и хранилище данных. Давайте решим, что для нас OLAP куб это MOLAP, закэшированные данные в файле или in-memory, где мы используем язык MDX для работы с ними по средством Excel или BI инструмента. А все остальное пусть будет ROLAP или просто классический BI. Чем я и пользуюсь, например в Tableau. MDX я тоже не знаю и не собираюсь его использовать.
+
+**Так как я не использую MOLAP c 2011 года и стараюсь вообще его избегать, то я не являюсь экспертом. Если есть неточности, смело добавляйте сюда.**
+
+**Видео лекция - теория** - [Ох уж эти кубы (Molap vs Rolap)](https://youtu.be/FWEQYomEbqw) 
+
+
+### Дополнительные материалы для изучения
+
+1. [Введение в многомерный анализ](https://habr.com/ru/post/126810/) (Русский)
+2. [Многомерные кубы, OLAP и MDX](https://habr.com/ru/post/66356/) (Русский)
+3. [Курс на Edx: Developing a Tabular Data Model](https://www.edx.org/course/developing-a-tabular-data-model) (English)
+4. [Курс на Edx: Developing a Multidimensional Data Model](https://www.edx.org/course/developing-a-multidimensional-data-model) (English)
+5. [Запуск OLAP-сервера на базе Pentaho по шагам](https://habr.com/ru/post/187782/) (Русский)
+
+## 3.6 Из чего состоит любой BI инструмент?
+
+Мы рассматриваем Business Intelligence как класс инструментов для создания аналитического решения и коммуникации с бизнес пользователями. Существует огромное кол-во инструментов BI, но если посмотреть поближе, они все похожи и имею много общего.
+
+
+**Видео лекция - теория** - [Из чего состоит любой BI инструмент?](https://youtu.be/vtGjvKjZpmU) 
+
+
+### Дополнительные материалы для изучения
+
+### Практика
+Есть ли у вас доступ к BI решению? Если есть, то попробуйте отыскать все элементы, про которые я рассказывал. Если нет, то попробуйте найти любой продукт BI и посмотреть, что внутри.
 
 ## 3.7 Основы визуализации данных
+Визуализация данных это неотъемлемая часть любого BI решения. Эксперты пишут книги, университеты готовят специалистов и все для того, чтобы научить нас эффективно коммуницировать данные с конечным пользователем. Каждый раз когда вы будет создавать дашборд или строить отчет, вы должны задуматься о том, как лучше рассказать историю на основе данных и какой метод визуализации использовать.
 
-## 3.8 Знакомство с клиентов BI (обзор Tableau Desktop и Power BI)
+**Видео лекция - теория** - [Основы визуализации данных](https://youtu.be/zUpKIFFy-ok) 
+
+### Дополнительные материалы для изучения
+
+1. [Вебинар Datalearn: Алгоритм Проектирования Дашборда с Романом Буниным](https://youtu.be/xSp5ykKcQho) (Русский)
+2. [10 примеров визуализации из истории](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples) (English)
+3. [Влияние цвета на качество визуализации](https://hbr.org/2014/04/the-right-colors-make-data-easier-to-read) (English)
+4. [Хорошая визуализация должна быть скучной](https://everydayanalytics.ca/2015/10/good-data-visualization-should-be-boring.html) (English)
+5. [Курс ВШЭ - Основы анализа и визуализация данных для медиа 2019/2020](http://wiki.cs.hse.ru/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0_%D0%B8_%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B4%D0%BB%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0_2019/2020#.D0.9C.D0.B0.D1.82.D0.B5.D1.80.D0.B8.D0.B0.D0.BB.D1.8B_.D0.BA.D1.83.D1.80.D1.81.D0.B0) (Русский)
+6. [Специализация на Coursera - Information Visualization Specialization](https://www.coursera.org/specializations/information-visualization) (English)
+7. [Курс на Coursera - Data Analysis and Presentation Skills: the PwC Approach Specialization](https://www.coursera.org/specializations/pwc-analytics) (English)
+8. [Курс на Coursera - Data Visualization with Advanced Excel](https://www.coursera.org/learn/advanced-excel) (English)
+9. [Курс на Coursera - Data Visualization and Communication with Tableau](https://www.coursera.org/learn/analytics-tableau) (English)
+10. [Как не врать с помощью статистики: основы визуализации данных](https://habr.com/ru/company/pixonic/blog/453828/) (Русский)
+
+### Практика
+Посмотрите на ваши дашборды на работе или в модуле 1 и 2. Что вы могли бы улучшить?
+
+Tabelau один из самых популярных продуктов среди BI. На западе Tableau очень популярен. Среди отечественных компаний он широко известен, но часто его считают дорогим. Хотя всем и так известно, что покупка BI - это инвестиция, если его правильно внедрить и хорошо настроить, обучить пользователей и дать им возможность самостоятельно ковыряться в данных (self-service BI). В этом уроке мы рассмотрим Tableau Desktop - клиент решения Tableau, который позволяет работать с большими и маленькими данными, подключаться ко множеству систем и сервисов и создавать офигительные дашборды.
+
+## 3.8 Знакомство с клиентов BI Tableau Desktop
+
+**Видео лекция - теория** - [Знакомство с Tableau Desktop](https://youtu.be/QY1FYMnxElw) 
+
+**Видео лекция - парктика** - [Демонстрация Tableau Dekstop](https://youtu.be/QY1FYMnxElw?t=2710) 
+
+### Дополнительные материалы для изучения
+
+1. [Tableau Tutorial](https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htm) (English)
+2. [Как создать Sparkline в Tableau](https://www.vizwiz.com/2015/09/kpisandsparklines.html) (English)
+3. [Обзор 43 графика за 50 минут](https://www.vizwiz.com/2017/10/43-charts-in-50-minutes.html) (English)
+4. [Шаблон 5 дашбордов](http://duelingdata.blogspot.com/2019/01/5-types-of-dashboards.html) (English)
+5. [Курс на Coursera - Data Visualization and Communication with Tableau](https://www.coursera.org/learn/analytics-tableau) (English)
+6. [Примеры работ в Tableau - Tableau Zen Мастером](https://photos.google.com/share/AF1QipPtbvxIRuoBESlPztSPTsryjD0ehd8SmpLBHp4aKdpUu0vcVqLZZP81DH1uzoRzKA?key=THpkYTRRT2JKU1ZVQzJBdTh4UDF6T3FoWVB0MUVn) (english)
+7. [Соревнования по Tableau - Iron Viz](https://www.tableau.com/iron-viz) (English)
+8. [Как создать Sankey график](https://www.flerlagetwins.com/2018/04/sankey-template.html) (English)
+
+### Практика
+Вы уже хорошо знакомы с SuperStore Dataset. Оказалось, что это самый популярны датасет в мире Табло. И вы даже увидете sampla dashboard в вашем новеньком Tableau Desktop. 
+
+1. Если еще нет Tabeau Desktop и лицензии, то следуйте [инструкции](https://github.com/Data-Learn/data-engineering/blob/master/how-to/how-to-tabelau-desktop.md).
+2. Подключитесь к БД Postgres и нарисуйте дашборд, который вы уже делали раньше. Вы можете использовать Табло пример для своего, главное понять как работает:
+- Tableau Data Sources
+- Live/Extract
+- Dimensions/Measures/Filters
+- Calculation Fields
+- Parameters
+- Table Calculations
+- LOD
+- Blending
+- Federated Data Source
+- Dashboard/View/Story
+- Forecast/Trend/Clustering
+
+Вы можете просто разобрать на части дашборд из примера и создать свой на этой базе. Главное понять принципы работы.
+
+В качестве результата вы должны создать дашборд и создать себе аккаунт на [Tableau Public](https://public.tableau.com/s/), куда вы сможете его загрузать. Постарайстесь использовать как можно больше Tableau функциональности, но не забываейте о красоте и простате.
 
 ## 3.9 Знакомство с клиентов BI Сервером (обзор Tableau Server)
 
-## 3.10 Обзор популярных решений для визуализации и отчетности
+## 3.10 Знакомство с клиентов Power BI
 
-## 3.11 Основные требования для BI разработчика
+## 3.11 Обзор "модных" решений для визуализации и отчетности
 
+## 3.12 BI опросы или как управлять клиентским опытом BI пользователей
 # Модуль 4:  Интеграция данных и создание потоков данных (data piplelines)
 
 ## Модуль 4.1 Введение
@@ -466,19 +550,21 @@ MindMap - интеллектуальная карта, инструмент ви
 
 ## Модуль 4.3 Обзор рынка решений ETL
 
-## Модуль 4.4 Классийческий ETL с графическим интерфейсом 
+## Модуль 4.4 2 типа ETL/ELT решений 
 
-## Модуль 4.5 Техники хранилищ данных в ETL иснтрументах
+## Модуль 4.5 Начало работы с ETL на примере Pentaho Data Integration
 
-## Модуль 4.6 Пример производительности ETL и ELT
+## Модуль 4.6 Техники хранилищ данных в ETL иснтрументах
+
+## Модуль 4.7 Пример производительности ETL и ELT
 
 # Модуль 5: Облачные вычисления (Cloud Computing)
 
 # Модуль 6: Облачное Хранилище данных
 
-# Модуль 7: Знакомство с Apache Spark
+# Модуль 7: Знакомство с Apache Spark 
 
-# Модуль 8: Создание решения для Big Data с использованием Hadoop и Spark
+# Модуль 8: Создание решения для Big Data с использованием Hadoop и Spark на AWS
 
 # Модуль 9: Знакомство с понятием Озера Данных и его создание с помощью инструментов AWS
 
